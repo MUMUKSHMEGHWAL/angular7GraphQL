@@ -1,0 +1,9 @@
+extend type Query {
+  current: String
+  stack: [String]
+}
+
+extend type Mutation {
+  nextPage(cursor: String): String
+  prevPage(cursor: String): String
+}
